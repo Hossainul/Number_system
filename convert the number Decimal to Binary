@@ -1,0 +1,31 @@
+// Decimal to Binary
+// just remiander of the base number.
+
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Collections;
+
+class W3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        ArrayList<Integer> array = new ArrayList<Integer>();
+
+        int A = sc.nextInt();
+
+        int cal1 = A;
+
+        while (cal1 != 0) {
+            int cal2 = cal1 % 2;
+            cal1 = cal1 / 2;
+            array.add(cal2);
+        }
+
+        // Reverse the ArrayList
+        Collections.reverse(array);
+
+        // Print the binary representation
+        for (Integer bit : array) {
+            System.out.println(bit);
+        }
+    }
+}

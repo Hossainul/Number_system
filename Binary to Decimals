@@ -1,0 +1,30 @@
+// Convert Binary to Decimal
+// just use the base number and before the Binary set value
+
+import java.util.Scanner;
+class W3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        
+        String A = sc.nextLine();
+        int cal = 0;
+        int cal1 = 0;
+        int last = 0;
+        int x = 0;
+    
+
+        for(int i = 0; i<A.length(); i++) {
+            x++;
+            char c = A.charAt(i);
+            cal = Character.getNumericValue(c); // convert the number into the int
+            cal1 =(int)(Math.pow(2,(A.length() -x)));
+            last = cal1;
+            System.out.println(last*(int)cal);
+            
+        }
+
+      
+        sc.close();
+    }
+}

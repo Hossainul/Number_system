@@ -1,0 +1,18 @@
+class course {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner();
+
+        int A = 77;
+        // here is the floor, ground, celling three things !
+        // so divide by the 2 so (n/2) == 38.5 
+        // so there no divisor value after 38 to >= 76
+        // First half only exits divisor it's magic rules
+        for(int i = 38 ; i<76; i++) {
+            int cal1 = 77 % i;
+
+            if(cal1 == 0) {
+                System.out.println("prime");
+            }
+        }
+    }
+}

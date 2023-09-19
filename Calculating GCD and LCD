@@ -1,0 +1,39 @@
+// program about the  GCD and LCD
+// taking any input.
+
+import java.util.Scanner;
+class course {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int A = sc.nextInt(); // Taking two inputs and find their common divisor which is the called GCD.
+        int B = sc.nextInt();
+        int A2 = 0;
+        int B3 = 0;
+
+        if(A<B) { // firts checking what's Bigger.
+           A2 = B;
+           B3 = A;
+        } else {
+            A2 = A;
+            B3 = B;
+        }
+        
+        //System.out.printf("%d %d", A2 ,B3);
+        
+        int AA = A2 % B3;
+        //System.out.println(AA);
+          
+        if(B3 % AA == 0) {
+            System.out.println("GCD is " + AA);
+        } else {
+            System.out.println("GCD is " +B3 % AA);
+        }
+        
+        // part 02
+        // let's calculate LCD 
+        // rules (aXb)/GCD;
+
+        int LCD  = (A*B)/ 
+    }
+}
